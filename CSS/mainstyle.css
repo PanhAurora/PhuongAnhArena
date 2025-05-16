@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+body
+{background-color:#EEEEEE;
+color: #0C1583;
+font-family: "Quicksand",
+ Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+font-style: 16px;
+margin: 0/*bỏ đẩy lề của trang*/
+	/*MÀU GARDIENT:background-image: linear-gradient(40deg,#FCEBF3,#C8D6FA)*/
+}
+.font-subtitle
+{font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{background:linear-gradient(#121FCF,#CF5B44);
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+h1,h2
+{font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+color: chocolate;
+}
+
+h1{font-size: 40px}
+h2{font-size: 36px}
+h3{font-size: 30px}
+h4{font-size: 24px}
+h5{font-size: 20px}
+h6{font-size: 18px}
+h1,h2,h3,h4,h5,h6{margin-bottom: 0; margin-top: 0}
+a{color: orangered;
+text-decoration: none;
+font-weight: 700
+}
+a:hover/*khi đưa chuột vào chữ có thẻ a (có link) liên kết trang web nào đó*/
+/*-------------------Lay out bố cục web*/
+.container-fluid
+{width: 100%; padding-left: 16px; padding-right: 16px 
+}
+.container
+{width: 95%; margin: auto}
+/*size container cho tablet(ipad)*/
+@media (min-width:600px)
+{.container
+	{width: 90%; margin: auto}
+}
+/*size container cho PC */
+@media (min-width:1000px)
+{.container
+	{width: 80%; margin: auto}
+}
+	
+/*chia hệ thống thành 12 cột*/
+.col-1{width:8.3333%}
+.col-2{width:16.6666%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row
+	{display: flex;
+		flex-wrap: wrap}
+.card
+{ 
+	background: white;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+footer
+{background: #BFBFBF}
+.text-primary{color:orangered}/*màu chữ chính (làm nhấn ý chính)*/
+.text-secondary{color: palevioletred}/*màu chữ phụ (làm nhấn ý phụ)*/
+.text-light{color:#DDDDDD}
+.text-dark{color:#323232}
+
+
+/*stlye hệ thống màu cho background*/
+.bg-primary{color:cornflowerblue}
+.bg-secondary{color: blanchedalmond}
+.bg-light{color:antiquewhite}
+.bg-dark{color:inherit}
+/*style hệ thống màu cho nút button*/
+
+/*style cho nút button*/
+.btn-primary{ background-color:burlywood; color: #FFFFFF; padding: 8px 16px; border-radius: 4px}
+.btn-primary:hover{background-color:cornflowerblue; color: white}
+.btn-secondary:hover{background-color:lightblue; color: antiquewhite}
+.btn-secondary:hover{background-color:cyan; color: white}
+
+/*.btn-outline-primary
+{ border:1px #73C86B solid inset;
+color: #DA2C2F;
+padding: 8px 16px;
+border-radius: 4px;
+margin-left:2px; }
+.btn-outline-primary:hover
+{ border:1px #964041 solid;
+color:white;
+padding: 8px 16px;
+border-radius: 4px}*/
+
+.btn-outline-primary
+{
+	background-color: burlywood;
+	border: 1px deeppink inset;
+	color: deeppink;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:deeppink;
+	color: white
+}
+/*----------style menu cho PC--------*/
+ul.menu
+{
+display:flex;
+padding:0;
+list-style: none;
+justify-content: space-around;	
+}
+ul.menu li a
+{
+	padding: 8px 16px;
+	background-color: antiquewhite;
+	margin: 2px;
+}
+ul.menu li a:hover
+{
+	background-color:coral;
+	border-bottom: 2px solid #666;
+	color: pink
+}
+
+
+
+
+
